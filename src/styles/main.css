@@ -1,0 +1,40 @@
+html {
+  font-size: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  font-style: normal;
+}
+
+a,
+a:focus,
+a:visited {
+  color: #222;
+  text-decoration: none;
+}
+
+.nav__home {
+  font-size: 2rem;
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 4.5rem;
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 700;
+  color: #fff;
+}
+
+h2 {
+  font-size: 3.5rem;
+  font-family: "Petemoss", sans-serif;
+  font-weight: 300;
+  color: #fff;
+  opacity: 0.8;
+}

@@ -1,0 +1,43 @@
+.footer {
+  min-height: 18rem;
+  background: #222;
+  padding: 4rem 8rem 0;
+
+  display: flex;
+  gap: 8rem;
+}
+
+.footer__title {
+  font-family: "Inria Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+}
+
+.footer__copyright {
+  margin-top: 1.5rem;
+  font-family: "Inria Sans", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #888;
+  line-height: 1.5rem;
+}
+
+.footer__link,
+.footer__link:visited {
+  display: block;
+  color: white;
+  font-family: "Inria Sans", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+}
+
+.footer__link:hover {
+  opacity: 0.6;
+}
+
+.footer__link:first-of-type {
+  margin-top: 1.5rem;
+}

@@ -1,0 +1,107 @@
+
+.tours__hero {
+  height: 60vh;
+  min-height: 500px;
+  background: black;
+  background: url('./tours_hero.jpg');
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  color: #fff;
+}
+
+.tours__main {
+  min-height: 4rem;
+}
+
+.tours__contents {
+  width: 60rem;
+  margin: 0 auto;
+  background: #fff;
+  position: relative;
+  min-height: 12rem;
+  top: -12rem;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  padding: 3rem;
+}
+
+.tours__header {
+  color: #222;
+  max-width: 40rem;
+  text-align: center;
+  margin: 0 auto;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.tours__text {
+  margin-top: 2rem;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.25rem;
+  font-family: "Inria Sans", sans-serif;
+  color: #888;
+}
+
+.tours__tab__container {
+  margin-top: 2rem;
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+}
+
+.tours__tab {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  background: #444;
+  color: #fff;
+  font-size: 1.25rem;
+  font-family: "Inria Sans", sans-serif;
+}
+
+.tour__list {
+  margin-top: 2rem;
+}
+
+.tour__item {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  grid-template-rows: 160px;
+  list-style-type: none;
+  border: 1px solid #888;
+  border-radius: 0.5rem;
+  margin: 2rem 0;
+}
+
+.tour__item__image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.tour__item__text {
+  padding: 1rem;
+  border-left: 1px solid #ccc;
+}
+
+.tour__item__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.tour__item__desc {
+  font-size: 1.25rem;
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 400;
+  color: #888;
+}

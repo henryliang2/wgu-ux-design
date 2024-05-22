@@ -1,0 +1,106 @@
+
+.transport__hero {
+  height: 60vh;
+  min-height: 500px;
+  background: black;
+  background: url('./transport_hero.jpg');
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  color: #fff;
+}
+
+.transport__main {
+  min-height: 4rem;
+}
+
+.transport__contents {
+  width: 60rem;
+  margin: 0 auto;
+  background: #fff;
+  position: relative;
+  min-height: 12rem;
+  top: -12rem;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  padding: 3rem;
+}
+
+.transport__header {
+  color: #222;
+  max-width: 40rem;
+  text-align: center;
+  margin: 0 auto;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.transport__text {
+  margin-top: 2rem;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.25rem;
+  font-family: "Inria Sans", sans-serif;
+  color: #888;
+}
+
+.transport__tab__container {
+  margin-top: 2rem;
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+}
+
+.transport__tab {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  background: #444;
+  color: #fff;
+  font-size: 1.25rem;
+  font-family: "Inria Sans", sans-serif;
+}
+
+.transport__list {
+  width: 100%;
+  margin-top: 2rem;
+  gap: 1rem;
+  display: flex;
+}
+
+.transport__hub {
+  display: block;
+  width: 100%;
+  border: 1px solid #888;
+  border-radius: 0.5rem;
+}
+
+.transport__hub__title {
+  font-size: 1.25rem;
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 700;
+  padding: 1rem;
+  text-align: center;
+  padding: 2rem;
+  border-bottom: 2px solid #888;
+}
+
+.transport__hub__image {
+  height: 250px;
+  background-size: cover;
+}
+
+.transport__hub__text {
+  font-size: 1.25rem;
+  font-family: "Inria Sans", sans-serif;
+  color: #888;
+  font-weight: 400;
+  padding: 2rem;
+}
