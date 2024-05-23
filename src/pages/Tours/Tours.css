@@ -21,7 +21,8 @@
 }
 
 .tours__contents {
-  width: 60rem;
+  width: 100%;
+  max-width: 60rem;
   margin: 0 auto;
   background: #fff;
   position: relative;
@@ -81,6 +82,13 @@
   border: 1px solid #888;
   border-radius: 0.5rem;
   margin: 2rem 0;
+}
+
+@media screen and (max-width: 800px) {
+  .tour__item {
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px;
+  }
 }
 
 .tour__item__image {

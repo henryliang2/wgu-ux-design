@@ -13,8 +13,8 @@ import Hubs from './Hubs'
 // https://unsplash.com/photos/white-boats-on-ocean-water-under-gray-sky-epRVcpr6yf8
 
 const ContentWrapper = ({ children }) => (
-  <div className='tours__main'>
-    <div className='tours__contents'>
+  <div className='transport__main'>
+    <div className='transport__contents'>
       { children }
     </div>
   </div>

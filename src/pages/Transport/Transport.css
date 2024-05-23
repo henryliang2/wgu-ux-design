@@ -21,7 +21,8 @@
 }
 
 .transport__contents {
-  width: 60rem;
+  width: 100%;
+  max-width: 60rem;
   margin: 0 auto;
   background: #fff;
   position: relative;
@@ -30,6 +31,12 @@
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
   padding: 3rem;
+}
+
+@media screen and (max-width: 900px) {
+  .transport__contents {
+    padding: 3rem 1rem;
+  }
 }
 
 .transport__header {
@@ -74,6 +81,12 @@
   margin-top: 2rem;
   gap: 1rem;
   display: flex;
+}
+
+@media screen and (max-width: 900px) {
+  .transport__list {
+    flex-direction: column;
+  }
 }
 
 .transport__hub {
