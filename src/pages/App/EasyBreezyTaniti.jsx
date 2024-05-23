@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom'
 import './App.css'
 
 import easy from './easy.png'
@@ -17,7 +18,6 @@ const Hub = ({
       </div>
       <h3 className='ez-hub-title'>{title}</h3>
       <p className='ez-description'>{description}</p>
-      <button className='ez-button'>Learn More</button>
     </div>
   )
 }
@@ -25,29 +25,36 @@ const Hub = ({
 const Separator = () => <div className='ez-separator'></div>;
 
 const EasyBreezyTaniti = () => {
+  const navigate = useNavigate();
+
   return (
-    <div className="ez-container">
-      <Hub 
-        image={easy}
-        className="easy-icon"
-        title="EASY"
-        description="Taniti serves direct flights and cruise ships from USA and around the world."
-      />
-      <Separator />
-      <Hub 
-        image={breezy}
-        className="breezy-icon"
-        title="BREEZY"
-        description="Taniti boasts a year-round tropical climate. Why not get a tan this holiday?"
-      />
-      <Separator />
-      <Hub 
-        image={taniti}
-        className="taniti-icon"
-        title="TANITI"
-        description="From shimmering beaches to enchanting forests, Taniti has it all."
-      />
-    </div>
+    <>
+      <div className="ez-container">
+        <Hub 
+          image={easy}
+          className="easy-icon"
+          title="EASY"
+          description="Taniti serves direct flights and cruise ships from USA and around the world."
+        />
+        <Separator />
+        <Hub 
+          image={breezy}
+          className="breezy-icon"
+          title="BREEZY"
+          description="Taniti boasts a year-round tropical climate. Why not get a tan this holiday?"
+        />
+        <Separator />
+        <Hub 
+          image={taniti}
+          className="taniti-icon"
+          title="TANITI"
+          description="From shimmering beaches to enchanting forests, Taniti has it all."
+        />
+      </div>
+      <div className="ez-button-container">
+        <button className='ez-button' onClick={() => navigate('/about')}>Learn more about Taniti</button>
+      </div>
+    </>
   )
 }
 

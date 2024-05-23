@@ -145,9 +145,19 @@ p.app__hub__price-content {
   height: 100px;
 }
 
+.ez-button-container {
+  background: #0b2345;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 4rem;
+  padding-bottom: 2rem;
+}
+
 .ez-button {
   background: #e3c24d;
-  margin-top: 1.5rem;
+  height: 3rem;
+  width: 20rem;
 }
 
 .ez-button:hover {

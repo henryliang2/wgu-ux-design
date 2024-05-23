@@ -1,3 +1,4 @@
+import { ScrollRestoration } from 'react-router-dom';
 import Navigation from '../../components/Navigation';
 import Footer from '../../components/Footer';
 
@@ -19,6 +20,7 @@ function About() {
 
   return (
     <>
+      <ScrollRestoration />
       <Navigation />
       <Hero />
       <ContentWrapper>
