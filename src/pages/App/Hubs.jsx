@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom'
 import './App.css'
 
 import condo from './hub-condo-2.jpg'
@@ -8,8 +9,10 @@ const Hub = ({
   title,
   mainContent,
   priceContent,
-  image
+  image,
+  link
 }) => {
+  const navigate = useNavigate();
 
   return (
     <div className='app__hub'>
@@ -23,7 +26,7 @@ const Hub = ({
           <p className="app__hub__price-content">{priceContent}</p>
         </h3>
         <div className='app__hub__button-container'>
-          <button className='app__hub__button'>Learn More</button>
+          <button className='app__hub__button' onClick={() => navigate(link)}>Learn More</button>
         </div>
       </div>
     </div>
@@ -44,18 +47,21 @@ const Hubs = () => {
         mainContent="Private Condos"
         priceContent="Starting at $189 / night"
         image={condo}
+        link="/accommodation"
       />
       <Hub 
         title="Transport" 
         mainContent="Car Rentals"
         priceContent="Starting at $39 / day"
         image={car}
+        link="/transport"
       /> 
       <Hub 
         title="Tours" 
         mainContent="Tour Packages"
         priceContent="Starting at $59"
         image={boat}
+        link="/tours"
       />
     </div>
   )

@@ -1,5 +1,6 @@
 // https://unsplash.com/photos/white-table-with-brown-wicker-chair-beside-plants-iANAdaNu7mg
 
+import { ScrollRestoration } from 'react-router-dom';
 import Navigation from '../../components/Navigation';
 import Footer from '../../components/Footer';
 
@@ -19,6 +20,7 @@ function Accommodation() {
 
   return (
     <>
+      <ScrollRestoration />
       <Navigation />
       <Hero />
       <ContentWrapper>
