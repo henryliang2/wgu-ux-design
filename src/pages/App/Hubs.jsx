@@ -10,6 +10,7 @@ const Hub = ({
   mainContent,
   priceContent,
   image,
+  linkCopy,
   link
 }) => {
   const navigate = useNavigate();
@@ -26,7 +27,7 @@ const Hub = ({
           <p className="app__hub__price-content">{priceContent}</p>
         </h3>
         <div className='app__hub__button-container'>
-          <button className='app__hub__button' onClick={() => navigate(link)}>Learn More</button>
+          <button className='app__hub__button' onClick={() => navigate(link)}>{linkCopy}</button>
         </div>
       </div>
     </div>
@@ -47,6 +48,7 @@ const Hubs = () => {
         mainContent="Private Condos"
         priceContent="Starting at $189 / night"
         image={condo}
+        linkCopy="Where to stay"
         link="/accommodation"
       />
       <Hub 
@@ -54,6 +56,7 @@ const Hubs = () => {
         mainContent="Car Rentals"
         priceContent="Starting at $39 / day"
         image={car}
+        linkCopy="Transport options"
         link="/transport"
       /> 
       <Hub 
@@ -61,6 +64,7 @@ const Hubs = () => {
         mainContent="Tour Packages"
         priceContent="Starting at $59"
         image={boat}
+        linkCopy="Browse tours"
         link="/tours"
       />
     </div>
