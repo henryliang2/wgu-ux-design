@@ -1,7 +1,7 @@
 .footer {
   min-height: 18rem;
   background: #222;
-  padding: 4rem 8rem 0;
+  padding: 4rem 8rem 2rem;
 
   display: flex;
   gap: 8rem;
