@@ -9,6 +9,63 @@ nav {
   padding: 0 2rem;
 }
 
+.nav__home {
+  font-size: 2rem;
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 700;
+}
+
+.nav-desktop {
+  display: block;
+}
+
+.nav-mobile {
+  font-size: 1.25rem;
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 700;
+  display: none;
+}
+
+.nav-mobile:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.nav-mobile__dropdown {
+  width: 100%;
+  position: absolute;
+  right: 0;
+  top: 6rem;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  padding: 1rem 0;
+  border: 2px solid black;
+}
+
+.nav-mobile__dropdown > a {
+  padding: 0.5rem;
+}
+
+@media screen and (max-width: 900px) {
+  nav {
+    position: fixed;
+    z-index: 3;
+  }
+
+  .nav__home {
+    font-size: 1.25rem;
+  }
+
+  .nav-desktop {
+    display: none;
+  }
+
+  .nav-mobile {
+    display: block;
+  }
+}
+
 nav a {
   margin: 0 1rem;
   font-family: "Inria Sans", sans-serif;

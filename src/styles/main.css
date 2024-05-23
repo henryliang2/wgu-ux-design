@@ -18,12 +18,6 @@ a:visited {
   text-decoration: none;
 }
 
-.nav__home {
-  font-size: 2rem;
-  font-family: "Inria Sans", sans-serif;
-  font-weight: 700;
-}
-
 h1 {
   font-size: 4.5rem;
   font-family: "Inria Sans", sans-serif;
