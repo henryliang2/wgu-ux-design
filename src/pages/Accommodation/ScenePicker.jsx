@@ -15,8 +15,8 @@ const Tabs = ({ children }) => <div className='accom__tab__container'>{ children
 
 const Tab = ({ label, onClick, isActive }) => {
 
-  let className = 'about__tab'
-  if (isActive) className += ' about__tab--active'
+  let className = 'accom__tab'
+  if (isActive) className += ' accom__tab--active'
 
   return (
     <div className={className} onClick={onClick}>

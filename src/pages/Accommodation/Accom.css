@@ -20,7 +20,8 @@
 }
 
 .accom__contents {
-  width: 60rem;
+  width: 100%;
+  max-width: 60rem;
   margin: 0 auto;
   background: #fff;
   position: relative;
@@ -29,6 +30,12 @@
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
   padding: 3rem;
+}
+
+@media screen and (max-width: 900px) {
+  .accom__contents {
+    padding: 3rem 1rem;
+  }
 }
 
 .accom__header {
@@ -57,6 +64,7 @@
 }
 
 .accom__tab {
+  position: relative;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -66,6 +74,19 @@
   color: #fff;
   font-size: 1.25rem;
   font-family: "Inria Sans", sans-serif;
+}
+
+.accom__tab--active {
+  background: #254d78;
+}
+
+@media screen and (max-width: 900px) {
+  .accom__tab {
+    height: 6rem;
+    font-size: 1rem;
+    padding: 1rem;
+    text-align: center;
+  }
 }
 
 .accom__scene {
@@ -81,6 +102,21 @@
   width: 300px;
   background: #0b2345;
   padding: 2rem;
+}
+
+@media screen and (max-width: 640px) {
+  .accom__scene {
+    background-position: bottom;
+  }
+
+  .accom__scene {
+    height: 38rem;
+  }
+
+  .accom__scene__textual {
+    width: 100%;
+    margin-top: 20rem;
+  }
 }
 
 .accom__scene__header {
@@ -109,15 +145,15 @@
   border-top: 2rem solid #254d78;
 }
 
-.about__tab--active > .active-marker {
+.accom__tab--active > .active-marker {
   display: block;
 }
 
-.about__tab:hover {
+.accom__tab:hover {
   background: #0398fc;
   cursor: pointer;
 }
 
-.about__tab:hover > .active-marker {
+.accom__tab:hover > .active-marker {
   border-top: 2rem solid #0398fc;
 }

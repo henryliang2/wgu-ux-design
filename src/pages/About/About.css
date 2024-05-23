@@ -20,7 +20,8 @@
 }
 
 .about__contents {
-  width: 60rem;
+  width: 100%;
+  max-width: 60rem;
   margin: 0 auto;
   background: #fff;
   position: relative;
@@ -29,6 +30,13 @@
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
   padding: 3rem;
+}
+
+
+@media screen and (max-width: 900px) {
+  .about__contents {
+    padding: 3rem 1rem;
+  }
 }
 
 .about__header {
@@ -67,6 +75,12 @@
   color: #fff;
   font-size: 1.25rem;
   font-family: "Inria Sans", sans-serif;
+}
+
+@media screen and (max-width: 900px) {
+  .about__tab {
+    font-size: 1rem;
+  }
 }
 
 .about__tab--active {
@@ -110,6 +124,21 @@
   width: 300px;
   background: #0b2345;
   padding: 2rem;
+}
+
+@media screen and (max-width: 640px) {
+  .about__scene {
+    background-position: bottom;
+  }
+
+  .about__scene {
+    height: 38rem;
+  }
+
+  .about__scene__textual {
+    width: 100%;
+    margin-top: 20rem;
+  }
 }
 
 .about__scene__header {
