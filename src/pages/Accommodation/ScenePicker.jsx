@@ -11,13 +11,20 @@ import Private from './private.jpg'
 import Bnb from './bnb.jpg'
 import Hotel from './hotel.jpg'
 
-const Tabs = ({ children }) => <div className='about__tab__container'>{ children }</div>
+const Tabs = ({ children }) => <div className='accom__tab__container'>{ children }</div>
 
-const Tab = ({ label, onClick }) => (
-  <div className='about__tab' onClick={onClick}>
-    {label}
-  </div>
-);
+const Tab = ({ label, onClick, isActive }) => {
+
+  let className = 'about__tab'
+  if (isActive) className += ' about__tab--active'
+
+  return (
+    <div className={className} onClick={onClick}>
+      {label}
+      <div className='active-marker'></div>
+    </div>
+  );
+};
 
 const ScenePicker = () => {
   const [tab, setTab] = useState(0);
@@ -47,9 +54,9 @@ const ScenePicker = () => {
   return (
     <>
       <Tabs>
-        <Tab label="Private Residences" onClick={() => setTab(0) }/>
-        <Tab label="Luxury Hotels" onClick={() => setTab(1) }/>
-        <Tab label="Bed & Breakfast" onClick={() => setTab(2) }/>
+        <Tab label="Private Residences" onClick={() => setTab(0) } isActive={tab === 0}/>
+        <Tab label="Luxury Hotels" onClick={() => setTab(1) } isActive={tab === 1}/>
+        <Tab label="Bed & Breakfast" onClick={() => setTab(2) } isActive={tab === 2}/>
       </Tabs>
       <div className='accom__scene' style={{ backgroundImage: `url(${imgPath})` }}>
         <div className='accom__scene__textual'>

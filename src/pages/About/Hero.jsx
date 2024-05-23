@@ -6,7 +6,7 @@ function Hero() {
 
   return (
     <div className='about__hero'>
-      ABOUT TANITI
+      YOURS TO DISCOVER
     </div>
   )
 }

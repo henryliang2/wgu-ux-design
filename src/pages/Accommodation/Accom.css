@@ -97,3 +97,27 @@
   color: #fff;
   font-weight: 300;
 }
+
+.active-marker {
+  display: none;
+  position: absolute;
+  bottom: -1.25rem;
+  width: 0; 
+  height: 0; 
+  border-left: 2rem solid transparent;
+  border-right: 2rem solid transparent;
+  border-top: 2rem solid #254d78;
+}
+
+.about__tab--active > .active-marker {
+  display: block;
+}
+
+.about__tab:hover {
+  background: #0398fc;
+  cursor: pointer;
+}
+
+.about__tab:hover > .active-marker {
+  border-top: 2rem solid #0398fc;
+}

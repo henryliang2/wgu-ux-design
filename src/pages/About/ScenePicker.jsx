@@ -13,7 +13,10 @@ const Tab = ({ label, onClick, isActive }) => {
   if (isActive) className += ' about__tab--active'
 
   return (
-    <div className={className} onClick={onClick}>{label}</div>
+    <div className={className} onClick={onClick}>
+      {label}
+      <div className='active-marker'></div>
+    </div>
   );
 };
 
