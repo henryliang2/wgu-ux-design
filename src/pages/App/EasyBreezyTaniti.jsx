@@ -28,7 +28,7 @@ const EasyBreezyTaniti = () => {
   const navigate = useNavigate();
 
   return (
-    <>
+    <div className='ez-container-wrapper'>
       <div className="ez-container">
         <Hub 
           image={easy}
@@ -54,7 +54,7 @@ const EasyBreezyTaniti = () => {
       <div className="ez-button-container">
         <button className='ez-button' onClick={() => navigate('/about')}>Learn more about Taniti</button>
       </div>
-    </>
+    </div>
   )
 }
 
