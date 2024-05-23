@@ -8,14 +8,28 @@
   align-items: center;
   justify-content: center;
 }
+
 .app__hero__text {
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
+  margin: 0 1rem;
+}
+
+.app__hero__text > h1 {
+  text-align: center;
+}
+
+@media screen and (max-width: 640px) {
+  .app__hero__text > h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
 }
 
 .app__hero__text > h2 {
+  text-align: center;
   position: relative;
   top: -1rem;
 }
@@ -29,6 +43,18 @@
   display: flex;
   padding: 0 5rem;
   gap: 2rem;
+}
+
+@media screen and (max-width: 1100px) {
+  .app__hubs__container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .app__hubs__container {
+    padding: 0 1rem;
+  }
 }
 
 .app__hub {
@@ -79,13 +105,14 @@ p.app__hub__price-content {
 
 .app__hub__button-container {
   margin-top: 12rem;
+  padding-bottom: 1rem;
   text-align: center;
 }
 
 
 .three-reasons {
   background: #fff;
-  padding: 3rem 0 1rem;
+  padding: 3rem 2rem 1rem;
   font-family: "Inria Sans", sans-serif;
   text-align: center;
   font-weight: 700;
@@ -106,7 +133,7 @@ p.app__hub__price-content {
   max-width: 1400px;
   min-height: 20rem;
   display: flex;
-  padding: 0 5rem;;
+  padding: 0 5rem;
 }
 
 .ez-hub {
@@ -123,6 +150,17 @@ p.app__hub__price-content {
   height: 0.5rem;
   position: relative;
   top: 13.25rem;
+}
+
+@media screen and (max-width: 1100px) {
+  .ez-container {
+    flex-direction: column;
+    padding: 0 2rem;
+  }
+
+  .ez-separator {
+    display: none;
+  }
 }
 
 .ez-hub-title {
