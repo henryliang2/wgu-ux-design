@@ -25,7 +25,7 @@ const Hubs = () => {
     <ul className='transport__list'>
       <Hub 
         title="Car Rental" 
-        description="Enjoy the flexibility to venture off the beaten path. Discover Taniti from the comfort of your own private vehicle."
+        description="Enjoy the flexibility to venture off the beaten path with your own private vehicle. Cars can be rented from the rental agency at Taniti Airport."
         image={car}
       />
       <Hub 
