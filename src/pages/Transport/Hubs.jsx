@@ -35,7 +35,7 @@ const Hubs = () => {
       />
       <Hub 
         title="Public Bus" 
-        description="The public bus network is extremely convenient and connects all of Taniti City. It runs from 5am to 11pm every day."
+        description="The public bus network is extremely cost-effective and convenient. It runs from 5am to 11pm every day, connecting all of Taniti City."
         image={bus}
       />
     </ul>
