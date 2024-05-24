@@ -34,8 +34,8 @@ const Hubs = () => {
         image={shuttle}
       />
       <Hub 
-        title="Local Bus" 
-        description="The public bus network of Taniti connects all of the towns and attractions, making it easy to experience everything the island has to offer."
+        title="Public Bus" 
+        description="The public bus network is extremely convenient and connects all of Taniti City. It runs from 5am to 11pm every day."
         image={bus}
       />
     </ul>
