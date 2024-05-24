@@ -36,7 +36,7 @@ const ScenePicker = () => {
     case 0: 
       imgPath = Private;
       headerText = "Private Residences";
-      description = <p>Taniti has hundreds of private residence units available for short-term stays. Nestled in prime locations, these luxurious homes offer the perfect blend of privacy, comfort, and stunning ocean views.</p>;
+      description = <p>Taniti has hundreds of private residence units available for short-term stays. Most of these private residences are situated in Merriton Landing and Yellow Leaf Bay. Private residences perfect blend of privacy, comfort, and stunning ocean views.</p>;
       break;
     case 1: 
       imgPath = Hotel; 
