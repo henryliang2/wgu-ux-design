@@ -81,6 +81,11 @@
   background: #254d78;
 }
 
+.hotel-list {
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
 @media screen and (max-width: 900px) {
   .accom__tab {
     height: 6rem;
@@ -100,7 +105,7 @@
 }
 
 .accom__scene__textual {
-  width: 300px;
+  width: 320px;
   background: #0b2345;
   padding: 2rem;
 }
@@ -117,6 +122,7 @@
   .accom__scene__textual {
     width: 100%;
     margin-top: 20rem;
+    min-height: 26rem;
   }
 }
 

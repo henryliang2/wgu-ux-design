@@ -36,18 +36,25 @@ const ScenePicker = () => {
     case 0: 
       imgPath = Private;
       headerText = "Private Residences";
-      description = "Taniti has hundreds of private residence units available for short-term stays. Nestled in prime locations, these luxurious homes offer the perfect blend of privacy, comfort, and stunning ocean views.";
+      description = <p>Taniti has hundreds of private residence units available for short-term stays. Nestled in prime locations, these luxurious homes offer the perfect blend of privacy, comfort, and stunning ocean views.</p>;
       break;
     case 1: 
       imgPath = Hotel; 
       headerText = "Luxury Hotels";
-      description = "Experience the pinnacle of sophistication and comfort at Taniti's luxury hotels. Tanitian hotels offer a blend of world-class amenities, impeccable service, and breathtaking views.";
+      description = <>
+        <p>Experience the pinnacle of sophistication and comfort at Taniti's luxury hotels. Tanitian hotels offer a blend of world-class amenities, impeccable service, and breathtaking views. Taniti's luxury hotels include:</p>
+        <ul className='hotel-list'>
+          <li>Hilton Taniti</li>
+          <li>The Tanitian</li>
+          <li>Marriott Taniti</li>
+        </ul>
+      </>;
       break;
     case 2:
     default: 
       imgPath = Bnb;
       headerText = "Bed & Breakfast";
-      description = "Discover the warmth of Tanitian hospitality by staying at a Bed & Breakfast with a licensed host. Tanitian B&Bs offer a cozy, home-like atmosphere with personalized touches that will make your stay truly unforgettable.";
+      description = <p>Discover the warmth of Tanitian hospitality by staying at a Bed & Breakfast with a licensed host. Tanitian B&Bs offer a cozy, home-like atmosphere with personalized touches that will make your stay truly unforgettable.</p>;
       break;
   }
 
