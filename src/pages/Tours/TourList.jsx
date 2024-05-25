@@ -1,3 +1,6 @@
+import { useState } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import './Tours.css'
 
 // https://unsplash.com/photos/brown-wooden-table-decor-on-brown-wooden-table-S2Gru9_krRs
@@ -14,12 +17,26 @@ import snorkel from './snorkel.jpg'
 import volcano from './volcano.jpg'
 
 const TourItem = ({ title, description, image }) => {
+  const [isBooked, setIsBooked] = useState(false);
+
+  const handleBook = () => {
+    toast(`${title} booked!`);
+    setIsBooked(true);
+  };
+
   return (
     <li className='tour__item'>
       <div className='tour__item__image' style={{ backgroundImage: `url(${image})` }}></div>
       <div className='tour__item__text'>
         <h3 className='tour__item__title'>{title}</h3>
         <p className='tour__item__desc'>{description}</p>
+        <button
+          disabled={isBooked}
+          onClick={handleBook}
+          className="book-button"
+        >
+          {isBooked ? "✅ Booked!" : "Book Now"}
+        </button>
       </div>
     </li>
   );
@@ -28,6 +45,7 @@ const TourItem = ({ title, description, image }) => {
 const TourList = () => {
   return (
     <ul className='tour__list'>
+      <ToastContainer />
       <TourItem
         title="Traditional Pottery Tour"
         description="Organized by skilled artisans deeply rooted in the island's traditions, this immersive experience offers a glimpse into Taniti's history and culture."

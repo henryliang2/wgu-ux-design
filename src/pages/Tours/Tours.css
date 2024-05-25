@@ -77,11 +77,30 @@
 .tour__item {
   display: grid;
   grid-template-columns: 240px 1fr;
-  grid-template-rows: 160px;
+  /* grid-template-rows: 160px; */
   list-style-type: none;
   border: 1px solid #888;
   border-radius: 0.5rem;
   margin: 2rem 0;
+}
+
+.book-button {
+  margin-top: 0.5rem;
+  background: #254d78;
+  min-height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff
+}
+
+.book-button:hover {
+  background: #0398fc;
+}
+
+.book-button:disabled {
+  background: #444;
+  cursor: default;
 }
 
 @media screen and (max-width: 800px) {
