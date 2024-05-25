@@ -31,3 +31,12 @@ Rice, Jared. (2017). White ceramic bathtub [Online image]. Unsplash. https://uns
 
 Davis, Andrea. (2021). Brown wooden chair near white bed [Online image]. Unsplash. https://unsplash.com/photos/brown-wooden-chair-near-white-bed-pBX-ej49-R8
 
+# Transport
+
+Maximilian, Cristofer. (2019). White pickup truck on road [Online image]. Unsplash. https://unsplash.com/photos/white-pickup-truck-on-road-KfBkfDGddsY
+
+# - "Car Rental" image is re-used.
+
+A white bus parked on the side of the road [Online image]. (2022). Unsplash. https://unsplash.com/photos/a-white-bus-parked-on-the-side-of-the-road-JcVnY_p6aXw
+
+Kelink, Jalal. (2020). White and black bus on road during daytime [Online image]. Unsplash. https://unsplash.com/photos/white-and-black-bus-on-road-during-daytime-7Vt3Kao-JJc
