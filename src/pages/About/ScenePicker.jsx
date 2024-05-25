@@ -1,9 +1,12 @@
 import './About.css'
 import { useState } from 'react';
 
-import Adventure from './adventure.jpg'
-import Experience from './experience.jpg'
-import Relax from './relax.jpg'
+import yellowLeaf from './yellowLeaf.jpg'
+import merriton from './merriton.jpg'
+import tanitiCity from './tanitiCity.jpg'
+
+// https://unsplash.com/photos/white-dining-tables-outdoors-GjMaXHKVnm4
+// https://unsplash.com/photos/a-street-lined-with-trees-and-parked-cars-L0LRP0L6LrA
 
 const Tabs = ({ children }) => <div className='about__tab__container'>{ children }</div>
 
@@ -28,20 +31,20 @@ const ScenePicker = () => {
   let description;
   switch(tab) {
     case 0: 
-      imgPath = Adventure;
-      headerText = "Adventure";
-      description = "Dive into an underwater wonderland, trek through lush rainforests, and soar above breathtaking landscapes. Taniti is a playground for thrill-seekers and nature enthusiasts alike.";
+      imgPath = yellowLeaf;
+      headerText = "Yellow Leaf Bay";
+      description = "Surrounded by native architecture and pristine white beaches, Yellow Leaf Bay is the picture-perfect tropical experience you've always dreamed of. Here, you can discover beautiful hiking trails - even one leading up to our magnificent volcano.";
       break;
     case 1: 
-      imgPath = Relax; 
-      headerText = "Relax";
-      description = "Bask in the sun on our pristine beaches, unwind in our luxurious spa resorts, and savor the gentle ocean breeze. Taniti offers the perfect setting to reconnect with serenity.";
+      imgPath = merriton; 
+      headerText = "Merriton Landing";
+      description = "The rapidly developing town of Merriton Landing is your little seaside escape in Taniti. Here, you can explore quiant cafes on the water and try fun activities like paddleboarding or sea kayaking.";
       break;
     case 2:
     default: 
-      imgPath = Experience;
-      headerText = "Experience";
-      description = "Experience the magic of Taniti through our exclusive island tours. From guided excursions to hidden gems, cultural adventures, and nature explorations, Taniti has a diverse range of tours that cater to every interest.";
+      imgPath = tanitiCity;
+      headerText = "Taniti City";
+      description = "Discover Taniti City, the vibrant heart of our island. In Tanity City, you can find lively markets with local crafts and produce. Taniti City is home to two museums that enshrine the rich history of Tanitians from generations past.";
       break;
   }
 
@@ -49,17 +52,17 @@ const ScenePicker = () => {
     <>
       <Tabs>
         <Tab 
-          label="Adventure" 
+          label="Yellow Leaf Bay" 
           isActive={tab === 0} 
           onClick={() => setTab(0) }
         />
         <Tab 
-          label="Relax" 
+          label="Merriton Landing" 
           isActive={tab === 1} 
           onClick={() => setTab(1) }
         />
         <Tab 
-          label="Experience" 
+          label="Taniti City" 
           isActive={tab === 2} 
           onClick={() => setTab(2) }
         />
