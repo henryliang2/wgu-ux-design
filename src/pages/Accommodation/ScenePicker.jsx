@@ -68,7 +68,7 @@ const ScenePicker = () => {
       <div className='accom__scene' style={{ backgroundImage: `url(${imgPath})` }}>
         <div className='accom__scene__textual'>
           <h3 className='accom__scene__header'>{ headerText }</h3>
-          <p className='accom__scene__description'>{ description }</p>
+          <div className='accom__scene__description'>{ description }</div>
         </div>
       </div>
     </>
