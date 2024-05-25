@@ -7,6 +7,7 @@ import Footer from '../../components/Footer';
 import Hero from './Hero'
 import Main from './Main'
 import ScenePicker from './ScenePicker'
+import Testimonial from './Testimonial'
 
 const ContentWrapper = ({ children }) => (
   <div className='accom__main'>
@@ -26,6 +27,7 @@ function Accommodation() {
       <ContentWrapper>
         <Main />
         <ScenePicker />
+        <Testimonial />
       </ContentWrapper>
       <Footer />
     </>

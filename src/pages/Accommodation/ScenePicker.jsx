@@ -45,7 +45,7 @@ const ScenePicker = () => {
         <p>Experience the pinnacle of sophistication and comfort at Taniti's luxury hotels. Tanitian hotels offer a blend of world-class amenities, impeccable service, and breathtaking views. Taniti's luxury hotels include:</p>
         <ul className='hotel-list'>
           <li>Hilton Taniti</li>
-          <li>The Tanitian</li>
+          <li>The Grand Tanitian</li>
           <li>Marriott Taniti</li>
         </ul>
       </>;
