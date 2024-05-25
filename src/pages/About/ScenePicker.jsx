@@ -5,7 +5,11 @@ import yellowLeaf from './yellowLeaf.jpg'
 import merriton from './merriton.jpg'
 import tanitiCity from './tanitiCity.jpg'
 
+
+// https://unsplash.com/photos/green-trees-on-mountain-near-body-of-water-during-daytime-aO5UJIXV0dY
+
 // https://unsplash.com/photos/white-dining-tables-outdoors-GjMaXHKVnm4
+
 // https://unsplash.com/photos/a-street-lined-with-trees-and-parked-cars-L0LRP0L6LrA
 
 const Tabs = ({ children }) => <div className='about__tab__container'>{ children }</div>
@@ -78,9 +82,3 @@ const ScenePicker = () => {
 }
 
 export default ScenePicker;
-
-// https://unsplash.com/photos/brown-nipa-hut-on-white-sand-beach-during-daytime-4aqH2utAPAs
-
-// https://unsplash.com/photos/green-trees-on-mountain-near-body-of-water-during-daytime-aO5UJIXV0dY
-
-// https://unsplash.com/photos/woman-sitting-on-swing-near-waterfall-6SPU6-KkyhA

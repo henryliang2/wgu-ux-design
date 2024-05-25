@@ -7,8 +7,6 @@ import Main from './Main'
 import ScenePicker from './ScenePicker'
 import TourCTA from './TourCTA'
 
-// https://unsplash.com/photos/calm-body-of-water-during-golden-hour-JP23z_-dA74
-
 const ContentWrapper = ({ children }) => (
   <div className='about__main'>
     <div className='about__contents'>
