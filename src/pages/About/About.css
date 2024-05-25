@@ -156,3 +156,46 @@
   color: #fff;
   font-weight: 300;
 }
+
+.tour-cta {
+  margin-top: 3rem;
+  background: #0b2345;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tour-cta h3 {
+  padding-top: 1rem;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+  font-family: "Inria Sans", sans-serif;
+}
+
+.tour-cta p {
+  padding: 2rem 3rem;
+  text-align: center;
+  font-size: 1.25rem;
+  color: white;
+  color: #fff;
+  font-weight: 300;
+  font-family: "Inria Sans", sans-serif;
+}
+
+@media screen and (max-width: 640px) {
+  .tour-cta p {
+    padding: 2rem 1rem;
+  }
+}
+
+.tour-cta__button {
+  background: #e3c24d;
+  height: 3rem;
+  width: 20rem;
+}
+
+.tour-cta__button:hover {
+  opacity: 0.8;
+}
